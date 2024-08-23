@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+#root {
+  --clr-cyan: rgb(102, 226, 220);
+  --clr-orange: rgb(250, 116, 83);
+  --clr-yellow: rgb(255, 185, 100);
+  --clr-white: rgb(252, 250, 249);
+  --clr-slate: rgb(25, 24, 38);
+
+  --space-900: 200px;
+  --space-800: 128px;
+  --space-700: 80px;
+  --space-600: 64px;
+  --space-500: 56px;
+  --space-400: 48px;
+  --space-300: 40px;
+  --space-200: 32px;
+  --space-150: 24px;
+  --space-100: 20px;
+  --space-50: 16px;
+  --space-00: 8px;
+
+  max-width: 1440px;
+  width: 100%;
+}
+/* CSS Reset */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--clr-white);
+  background-image: url(./assets/bg-main-desktop.png),
+    url(./assets/bg-pattern-1.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, right top -40px;
+}
+@media (max-width: 60rem) {
+  body {
+    background-image: url(./assets/bg-main-tablet.png),
+      url(./assets/bg-pattern-1.svg);
+    background-position: center, right -50px top -40px;
+  }
+}
+@media (max-width: 30rem) {
+  body {
+    background-image: url(./assets/bg-main-mobile.png);
+  }
+}
+.preset-100 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 88px;
+  line-height: 100%;
+  letter-spacing: -1px;
+}
+.preset-200 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+.preset-300 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 110%;
+  letter-spacing: 0px;
+}
+.preset-400 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+.preset-500-bold {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+.preset-500 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+.preset-600 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0px;
+}
+@media (max-width: 60rem) {
+  .preset-100 {
+    font-size: 64px;
+  }
+  .preset-400 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 30rem) {
+  .preset-100 {
+    font-size: 40px;
+  }
+  .preset-400 {
+    font-size: 16px;
+  }
+}
+.slide-in {
+  animation: slideIn 800ms linear;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-30%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}

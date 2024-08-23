@@ -1,0 +1,20 @@
+header {
+  --margin-top: var(--space-600);
+  --margin-inline: 160px;
+  margin-top: var(--margin-top);
+  margin-inline: var(--margin-inline);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: 60rem) {
+  header {
+    --margin-inline: 44px;
+  }
+}
+@media (max-width: 30rem) {
+  header {
+    --margin-inline: var(--space-100);
+  }
+}

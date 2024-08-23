@@ -1,0 +1,17 @@
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+
+  & img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    &:hover {
+      filter: invert(81%) sepia(59%) saturate(6602%) hue-rotate(329deg)
+        brightness(107%) contrast(96%);
+    }
+  }
+}
